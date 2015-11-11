@@ -1,0 +1,108 @@
+
+doctype html
+html
+  head
+    link(rel="stylesheet", href="/css/styles.css")
+    link(rel='stylesheet', href='//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css')
+
+    meta(name="viewport" content="width=device-width" initial-scale=1.0)
+
+    include ../html/header.html
+  body
+    //- block content
+
+
+    //- filter bar
+    .row
+      .large-12.columns#filter-bar
+
+        .ui-widget#jobSearch
+          label(for='jobTypes') Job Type:
+          input#jobTypes
+        .ui-widget#houseSearch
+          label(for='houseTypes') House Type:
+          input#houseTypes
+        .ui-widget#citySearch
+          label(for='cityTypes') City:
+          input#cityTypes
+        .ui-widget#salarySearch
+          label(for='salaryTypes') Salary:
+          input#salaryTypes
+
+        a.button(href="#") Submit
+
+        hr
+
+    //- salary bar
+    .row#salary-bar
+      .large-3.columns#large
+        p
+      .large-6.columns
+        h2 ex. Programmer's salary in this area is
+      .large-3.columns#large
+        p
+
+    //- map area
+    .row
+      .large-9.columns#map
+        p
+           map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map map
+
+
+      //- list/detals section
+      aside.large-3.columns#list
+        ul.side-nav
+          h5 List/Details
+          //- for Each job in jobs
+          a(href="www.indeed.com")
+
+
+        //- list/detals section
+      aside.large-3.columns#list
+        ul.side-nav
+          h5 List/Details
+            a(href="www.indeed.com")
+              h2 job title
+              h2 company
+              h2 city/state
+              p snippet
+
+    //- footer
+    footer.row
+      .large-12.columns#footer
+        hr
+
+        .row
+          .large-6.columns
+            p &copy; Copyright no one at all. Go to town.
+
+          .large-6.columns
+            ul.inline-list.right
+              a(href='#') Link 1
+
+              a(href='#') Link 2
+
+              a(href='#') Link 3
+
+              a(href='#') Link 4
+
+    //- script(src='//code.jquery.com/jquery-1.10.2.js')
+    script(src="/js/modernizr.js")
+    script(src="/js/jquery.js")
+    script(src="/js/foundation.min.js")
+    script(src='//code.jquery.com/ui/1.11.4/jquery-ui.js')
+    script(src="/js/autoComplete.js")
+    script(src="/js/cityTypes.js")
+    script(src="/js/jobTypes.js")
+    script(src="/js/salaryTypes.js")
+    script(src="/js/houseTypes.js")
+
+
+
+    script.
+      $(document).foundation();
+
+
+
+
+

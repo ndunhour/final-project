@@ -1,0 +1,48 @@
+@import "partials/settings";
+@import 'foundation/components/grid';
+@import 'foundation/components/buttons';
+@import 'foundation/components/dropdown';
+@import 'foundation/components/top-bar';
+@import 'foundation/components/visibility';
+@import 'foundation/components/side-nav';
+
+
+
+body{
+  background: aqua;
+}
+#filter-bar{
+  background: white;
+}
+#salary-bar{
+  background: green;
+}
+#map{
+  background: brown;
+}
+#list{
+  background: gray;
+}
+#footer{
+  background: yellow;
+}
+#jobSearch{
+  width: 22%;
+  display: inline-block;
+  padding-right: 10px;
+}
+#houseSearch{
+  width: 22%;
+  display: inline-block;
+  padding-right: 10px;
+}
+#citySearch{
+  width: 22%;
+  display: inline-block;
+  padding-right: 10px;
+}
+#salarySearch{
+  width: 22%;
+  display: inline-block;
+  padding-right: 10px;
+}
